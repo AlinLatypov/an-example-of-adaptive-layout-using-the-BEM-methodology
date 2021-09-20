@@ -1,0 +1,13 @@
+.b-secondSctn{
+  width: 100%;
+  padding: 5% 3%;
+  box-sizing: border-box;
+  background: $lightestColor;
+  display:flex;
+  justify-content: space-between;
+  @include media-breakpoint-down(sm) {
+    justify-content: space-around;
+  }
+  flex-wrap: wrap;
+  border-top: 1px solid #e2e2e2;
+}

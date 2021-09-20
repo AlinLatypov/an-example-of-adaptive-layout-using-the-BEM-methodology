@@ -1,0 +1,66 @@
+@import "../packages/bootstrap-4.1.3/scss/bootstrap";
+@import "variables.scss";
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/header";
+@import "blocks/social.scss";
+@import "blocks/loginNav.scss";
+@import "blocks/navAndSearch.scss";
+@import "blocks/mainNav.scss";
+@import "blocks/search.scss";
+@import "blocks/mainSlider.scss";
+@import "blocks/firstSctn.scss";
+@import "blocks/unit.scss";
+@import "blocks/secondSctn.scss";
+@import "blocks/article.scss";
+@import "blocks/footer.scss";
+@import "blocks/copyright.scss";
+
+html,
+body{
+ width: 100%;
+ height: 100%;
+ font-size: 125%;
+ @include media-breakpoint-down(xs) {font-size: 100%;}
+ @include media-breakpoint-down(sm) {font-size: 88%;}
+ @include media-breakpoint-down(md) {font-size: 75%;}
+ @include media-breakpoint-down(lg) {font-size: 58%;}
+}
+body{
+ font-family: $_mainFont;
+ color: $lightestColor;
+ background: rgb(31, 31, 31);
+ box-sizing: border-box;
+ padding: 1.7% 0;
+
+ .container{
+  width: 96%;
+  min-height: 100%;
+  background: $lightestColor;
+  padding: 0;
+  display: grid;
+  grid-template-rows:  minmax(100px, auto) 1fr minmax(315px, auto);
+
+  .headerBox{
+   width: 100%;
+   height: auto;
+
+   .rightSide{
+    float: right;
+    @include media-breakpoint-down(sm){
+     float: none;
+    }
+   }
+  }
+
+  .clearfix:after {
+   content: "";
+   display: table;
+   clear: both;
+  }
+
+  .main{
+   width: 100%;
+  }
+ }
+}

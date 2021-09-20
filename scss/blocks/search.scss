@@ -1,0 +1,55 @@
+.b-search{
+  flex-grow: 2;
+  display: flex;
+  justify-content:center;
+
+  &__field{
+    width: 50%;
+    height: 1.875rem;
+    font-family: $_mainFont;
+    color:  #7f7f7f;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 0.9rem;
+    text-align: left;
+    padding-left: 0.32rem;
+    border: none;
+    border-right: 1px solid $darkColor;
+    outline: none;
+    align-self: center;
+    @include media-breakpoint-down(sm) {
+      width: 35%;
+      border-top-left-radius: 0.9rem;
+      border-bottom-left-radius: 0.9rem;
+    }
+  }
+
+  &__btn{
+    width: 25%;
+    height: 1.875rem;
+    font-family: $_mainFont;
+    color:  $mainColor;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 0.9rem;
+    text-align: left;
+    text-transform: uppercase;
+    background: $lightestColor;
+    border: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    outline: none;
+    align-self: center;
+    @include media-breakpoint-down(sm) {
+      width: 15%;
+      border-top-right-radius: 0.9rem;
+      border-bottom-right-radius: 0.9rem;
+    }
+
+    &:focus{
+      border: none;
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}

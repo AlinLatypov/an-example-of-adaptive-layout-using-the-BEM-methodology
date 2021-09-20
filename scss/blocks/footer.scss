@@ -1,0 +1,207 @@
+.b-footer{
+  width: 100%;
+  background: #3b3b3b;
+  box-sizing: border-box;
+  padding-top: 30px;
+  margin: 0 auto ;
+
+  &__footBlock{
+    width:93.75%;
+    justify-content: space-around;
+    align-content: space-around;
+
+    &_locality{
+      margin: 0 auto;
+    }
+  }
+
+  &__contDet,
+  &__quickLinks,
+  &__frmTheBl,
+  &__grbOurNewlt{
+    width: 210px;
+    @include media-breakpoint-down(md){
+      margin-bottom: 7%;
+    }
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+      margin-bottom: 7%;
+    }
+  }
+
+  &__header{
+    font-family: $_mainFont;
+    color:  #666666;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.6px;
+    text-align: left;
+    text-transform: uppercase;
+
+    &_locality{
+      margin-bottom: 30px;
+    }
+  }
+
+  &__dscpt{
+    font-family: $_mainFont;
+    color:  $greyColor;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.6px;
+    text-align: left;
+
+    &_locality{
+      margin-bottom: 30px;
+    }
+  }
+
+  &__contacts{
+    font-family: $_mainFont;
+    color:  $greyColor;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.6px;
+    text-align: left;
+  }
+
+  &__linkList{
+    padding: 0;
+  }
+
+  &__link{
+    display: block;
+    font-family: $_mainFont;
+    color:  $greyColor;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: left;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $greyColor;
+    list-style-type: none;
+    transition-duration: 0.4s;
+
+    &:hover{
+      color: $mainColor;
+      text-decoration: none;
+    }
+
+    &_locality{
+      margin-bottom: -10px;
+    }
+  }
+
+  &__artHeader{
+    font-family: $_mainFont;
+    color:  #999999;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.6px;
+    text-align: left;
+
+    &_locality{
+      margin-bottom: 11px;
+    }
+  }
+
+  &__artText{
+    font-family: $_mainFont;
+    color:  #999999;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+  }
+
+  &__readMore{
+    font-family: $_mainFont;
+    color:  $mainColor;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: right;
+    transition-duration: 0.4s;
+
+    &:hover{
+      color: $lightestColor;
+      text-decoration: none;
+    }
+
+    &_locality{
+      margin-top: -10px;
+      float: right;
+    }
+  }
+
+  &__inputName{
+    width: 210px;
+    height: 31px;
+    background: black;
+    font-family: $_mainFont;
+    color:  $greyColor;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20.583px;
+    text-align: left;
+    border-radius:6px;
+    border: none;
+    padding: 10px;
+    outline: none;
+
+    &:focus{
+      border: 1px solid $mainColor;
+    }
+
+    &_locality{
+      margin-bottom: 15px;
+    }
+  }
+
+  &__inputEmail{
+    width: 210px;
+    height: 31px;
+    background: black;
+    font-family: $_mainFont;
+    color:  $greyColor;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20.583px;
+    text-align: left;
+    border-radius:6px;
+    border: none;
+    padding: 10px;
+    outline: none;
+
+    &:focus{
+      border: 1px solid $mainColor;
+    }
+
+    &_locality{
+      margin-bottom: 15px;
+    }
+  }
+
+  &__submitBtn{
+    width: 80px;
+    height: 31px;
+    background: black;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-family: $_mainFont;
+    color:  $mainColor;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20.583px;
+    text-align: center;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+
+    &:hover{
+      color: $lightestColor;
+    }
+  }
+}

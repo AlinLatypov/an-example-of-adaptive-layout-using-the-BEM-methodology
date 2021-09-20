@@ -1,0 +1,15 @@
+.b-mainPageSlider{
+  width: 100%;
+  height: auto;
+  background:#f2f2f2;
+  padding: 1.937rem;
+  box-sizing: border-box;
+
+  &__slider{
+    width: 88%;
+    height: auto;
+    border: .56rem solid $lightestColor;
+    box-shadow: 0 0 1px;
+    margin: 0 auto;
+  }
+}

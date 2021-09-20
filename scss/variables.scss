@@ -1,0 +1,14 @@
+//fonts
+@font-face {
+  font-family: georgiaRegular;
+  src: url('../fonts/Georgia_Regular.ttf');
+}
+
+$_mainFont:'georgiaRegular', sans-serif;
+
+//colors
+$mainColor: #81b300;
+$lightestColor: #fff;
+$lightColor: #f2f2f2;
+$greyColor:#999999;
+$darkColor:#333333;

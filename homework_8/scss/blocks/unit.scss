@@ -1,0 +1,36 @@
+.b-unit{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  flex-basis: 200px;
+
+  &__unitImg{
+    width: 4.4rem;
+    height: auto;
+
+    &_locality{
+      align-self: center;
+    }
+  }
+
+  &__unitHeader{
+    font-family: $_mainFont;
+    color:  $mainColor;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.35rem;
+    text-align: center;
+  }
+
+  &__unitDescription{
+    font-family: $_mainFont;
+    padding: 0 5px;
+    box-sizing: border-box;
+    color:  #888888;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: center;
+  }
+}
